@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PawsConnect | Services</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+  <style>
+
+  </style>
+</head>
+<body>
+    <!-- Main heading for accessibility and SEO -->
+    <h1 class="visually-hidden">PawsConnect - Your Pet Adoption and Care Hub</h1>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+        <img src="images/pawsconnect_logo.png" alt="PawsConnect logo" class="logo"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+            <li class="nav-item px-4"><a class="nav-link" href="home.html">Home</a></li>
+            <li class="nav-item px-4"><a class="nav-link" href="shop.html">Shop</a></li>
+            <li class="nav-item px-4"><a class="nav-link" href="appointments.html">Appointments</a></li>
+            <li class="nav-item px-4"><a class="nav-link active" href="services.html">Services</a></li>
+            <li class="nav-item px-4"><a class="nav-link" href="contact_us.html">Contact</a></li>
+            <li class="nav-item px-4"><a class="nav-link" href="blog.html">Blog</a></li>
+        </ul>
+        <div class="d-flex justify-content-lg-end justify-content-center w-100 mt-2 mt-lg-0">
+            <a href="bookAppointment.html" class="btn book-btn mt-2 mt-lg-0">Book an Appointment</a>
+        </div>
+        </div>
+    </div>
+    </nav>
+
+    <!-- Cards -->
+    <div class="container my-5">
+        <h2 class="fw-bold text-center w-100 mb-4">Our Services</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card shadow-sm service-card" role="button" data-bs-toggle="modal" data-bs-target="#serviceModal1">
+                        <img src="images/MedicalVet.png" class="card-img-top" alt="Medical Services">
+                        <div class="card-body">
+                        <h3 class="card-title fw-bold">Medical Services</h3>
+                        <p class="card-text">Comprehensive diagnostics and treatment to ensure your pet's ongoing health.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm service-card" role="button" data-bs-toggle="modal" data-bs-target="#serviceModal2">
+                        <img src="images/Vaccination.png" class="card-img-top" alt="Vaccination">
+                        <div class="card-body">
+                        <h3 class="card-title fw-bold">Vaccination</h3>
+                        <p class="card-text">Vaccinations to protect your pet from preventable diseases.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm service-card" role="button" data-bs-toggle="modal" data-bs-target="#serviceModal3">
+                        <img src="images/Training.png" class="card-img-top" alt="Training Program">
+                        <div class="card-body">
+                        <h3 class="card-title fw-bold">Training Program</h3>
+                        <p class="card-text">Behavioral and obedience training for a happy, well-adjusted pet.</p>
+                        </div>
+                    </div>
+                </div>
+            <div class="col">
+                <div class="card shadow-sm service-card" role="button" data-bs-toggle="modal" data-bs-target="#serviceModal4">
+                    <img src="images/Grooming.png" class="card-img-top" alt="Grooming Services">
+                    <div class="card-body">
+                    <h3 class="card-title fw-bold">Grooming Services</h3>
+                    <p class="card-text">Professional grooming to maintain your pet's hygiene and appearance.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm service-card" role="button" data-bs-toggle="modal" data-bs-target="#serviceModal5">
+                    <img src="images/Wellness.png" class="card-img-top" alt="Wellness Plan">
+                    <div class="card-body">
+                    <h3 class="card-title fw-bold">Wellness Plan</h3>
+                    <p class="card-text">Routine care packages to support lifelong pet health and well-being.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm service-card" role="button" data-bs-toggle="modal" data-bs-target="#serviceModal6">
+                    <img src="images/SpecialProcedure.png" class="card-img-top" alt="Special Procedure">
+                    <div class="card-body">
+                    <h3 class="card-title fw-bold">Special Procedure</h3>
+                    <p class="card-text">Expert care for surgeries and advanced procedures your pet may need.</p>
+                </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div class="modal fade" id="serviceModal1" tabindex="-1" aria-labelledby="serviceModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="serviceModal1Label">Medical Services</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                We offer a full range of diagnostic and medical services to help detect, treat, and manage your pet’s health conditions. Our experienced veterinary team uses state-of-the-art equipment to provide personalized care.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="serviceModal2" tabindex="-1" aria-labelledby="serviceModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="serviceModal2Label">Vaccination</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Our vaccination program includes all core vaccines essential to keeping your pet healthy and safe. We guide you through the vaccination schedule based on age, lifestyle, and risk factors.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="serviceModal3" tabindex="-1" aria-labelledby="serviceModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="serviceModal3Label">Training Program</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Our training program covers basic obedience, house training, socialization, and behavioral correction. Ideal for puppies and adult pets alike, taught by experienced trainers.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="serviceModal4" tabindex="-1" aria-labelledby="serviceModal4Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="serviceModal4Label">Grooming Services</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Our professional grooming keeps your pet clean, comfortable, and stylish. Services include bathing, nail trimming, brushing, de-shedding, and breed-specific haircuts.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="serviceModal5" tabindex="-1" aria-labelledby="serviceModal5Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="serviceModal5Label">Wellness Plan</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Our customized wellness plans are designed to provide affordable preventive care. Plans include annual checkups, parasite control, nutrition consultations, and more.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="serviceModal6" tabindex="-1" aria-labelledby="serviceModal6Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="serviceModal6Label">Special Procedure</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    We offer advanced surgical and medical procedures performed by licensed professionals. These include spaying/neutering, dental surgery, orthopedics, and emergency care.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+        <!-- Footer -->
+    <footer class="text-center text-lg-start mt-5">
+      <div class="container p-5">
+        <div class="row">
+
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0 text-start">
+            <h3 class="text-uppercase fw-bold">PawsConnect</h3>
+            <p class="text-muted">
+              Making pet care easier and more connected. From appointments to shopping – we’ve got your fur family covered.
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-start">
+            <h4 class="text-uppercase">Quick Links</h4>
+            <ul class="list-unstyled mb-0">
+              <li><a href="home.html" class="text-muted text-decoration-none">Home</a></li>
+              <li><a href="shop.html" class="text-muted text-decoration-none">Shop</a></li>
+              <li><a href="services.html" class="text-muted text-decoration-none">Services</a></li>
+              <li><a href="contact_us.html" class="text-muted text-decoration-none">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-start">
+            <h4 class="text-uppercase">Connect</h4>
+            <ul class="list-unstyled">
+              <li><span class="text-muted">📞 (123) 456-7890</span></li>
+              <li><span class="text-muted">📧 support@pawsconnect.com</span></li>
+              <li><span class="text-muted">🏢 Sampaloc, Manila</span></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="text-center p-3 text-black">
+        © 2025 PawsConnect. All rights reserved.
+      </div>
+    </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

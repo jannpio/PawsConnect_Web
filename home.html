@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop & Vet Clinic - Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+        <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="images/pawsconnect_logo.png" alt="PawsConnect logo" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Collapse Nav -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+                <li class="nav-item px-4"><a class="nav-link active" href="home.html">Home</a></li>
+                <li class="nav-item px-4"><a class="nav-link" href="shop.html">Shop</a></li>
+                <li class="nav-item px-4"><a class="nav-link" href="appointments.html">Appointments</a></li>
+                <li class="nav-item px-4"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item px-4"><a class="nav-link" href="contact_us.html">Contact</a></li>
+                <li class="nav-item px-4"><a class="nav-link" href="blog.html">Blog</a></li>
+            </ul>
+            <div class="d-flex justify-content-lg-end justify-content-center w-100 mt-2 mt-lg-0">
+            <a href="bookAppointment.html" class="btn book-btn mt-2 mt-lg-0">
+                Book an Appointment
+            </a>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+  <!-- ✅ Hero / Welcome Section -->
+  <section class=" py-5 text-center rounded-bottom-4">
+    <div class="container">
+      <h1 class="fw-bold">Welcome Back, Alex! 🐶</h1>
+      <p class="lead text-muted">We’re glad to see you. Here's a quick look at your pet world!</p>
+    </div>
+  </section>
+
+  <!-- ✅ Dashboard Cards Section -->
+  <section class="container my-5">
+    <div class="row g-4">
+      <!-- Shopping Cart -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm border-0 rounded-4 text-center p-4 h-100">
+          <div class="mb-3 fs-1 text-primary"></div>
+          <h2 class="fw-bold">Shopping Cart</h2>
+          <p class="text-muted">View and manage your pet supplies.</p>
+          <a href="shop.html" class="btn btn-primary text-black">Go to Cart</a>
+        </div>
+      </div>
+
+      <!-- Pet Booklet -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm border-0 rounded-4 text-center p-4 h-100">
+          <div class="mb-3 fs-1 text-warning"></div>
+          <h2 class="fw-bold">Pet Booklet</h2>
+          <p class="text-muted">See your pet’s medical history & updates.</p>
+          <a href="petBooklet.html" class="btn btn-warning text-dark">View Booklet</a>
+        </div>
+      </div>
+
+      <!-- Appointments -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm border-0 rounded-4 text-center p-4 h-100">
+          <div class="mb-3 fs-1 text-info"></div>
+          <h2 class="fw-bold">Appointments</h2>
+          <p class="text-muted">View past & upcoming appointments.</p>
+          <a href="appointments.html" class="btn btn-primary text-black">Manage Appointments</a>
+        </div>
+      </div>
+
+    <!-- Doctors Section -->
+    <section class="doctors-section">
+        <div class="container">
+        <h2 class="text-center mb-5 fw-bold">Meet Our Trusted Veterinarians</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-4 text-center mb-4 doctor-card">
+            <img src="images/doctor1.png" class="img-fluid mb-3" alt="Dr. Lily Thompson">
+            <h2>Dr. Jennifer Sadezma</h2>
+            <p>🐶 Small Animal Medicine</p>
+            <p>10+ years caring for dogs and small pets.</p>
+            </div>
+            <div class="col-md-4 text-center mb-4 doctor-card">
+            <img src="images/doctor2.png" class="img-fluid mb-3" alt="Dr. Marcus Reed">
+            <h2>Dr. Joy Marie Ruanto</h2>
+            <p>🐱 Feline Specialist</p>
+            <p>Focused on feline health and nutrition.</p>
+            </div>
+            <div class="col-md-4 text-center mb-4 doctor-card">
+            <img src="images/doctor3.png" class="img-fluid mb-3" alt="Dr. Aisha Patel">
+            <h2>Dr. Kath Maxwell</h2>
+            <p>🐾 Exotic Pet Specialist</p>
+            <p>Loves caring for birds, rabbits, and reptiles.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+  <!-- ✅ Testimonials / Info -->
+    <div class="container">
+      <h3 class="text-center mb-4 fw-bold">🐾 Happy Pet Owners</h3>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow-sm border-0 rounded-4 p-3 h-100">
+            <p class="text-muted">“Thanks to PawsConnect, booking and tracking pet checkups is a breeze!”</p>
+            <h4 class="fw-bold mb-0">— Emily, Bella's mom</h4>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm border-0 rounded-4 p-3 h-100">
+            <p class="text-muted">“I love how I can store all of Max’s medical info in one place.”</p>
+            <h4 class="fw-bold mb-0">— James, Max's dad</h4>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm border-0 rounded-4 p-3 h-100">
+            <p class="text-muted">“Great team, great design, and easy to use. Highly recommend!”</p>
+            <h4 class="fw-bold mb-0">— Sarah, Luna's owner</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start mt-5">
+      <div class="container p-5">
+        <div class="row">
+
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0 text-start">
+            <h3 class="text-uppercase fw-bold">PawsConnect</h3>
+            <p class="text-muted">
+              Making pet care easier and more connected. From appointments to shopping – we’ve got your fur family covered.
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-start">
+            <h4 class="text-uppercase">Quick Links</h4>
+            <ul class="list-unstyled mb-0">
+              <li><a href="home.html" class="text-muted text-decoration-none">Home</a></li>
+              <li><a href="shop.html" class="text-muted text-decoration-none">Shop</a></li>
+              <li><a href="services.html" class="text-muted text-decoration-none">Services</a></li>
+              <li><a href="contact_us.html" class="text-muted text-decoration-none">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-start">
+            <h4 class="text-uppercase">Connect</h4>
+            <ul class="list-unstyled">
+              <li><span class="text-muted">📞 (123) 456-7890</span></li>
+              <li><span class="text-muted">📧 support@pawsconnect.com</span></li>
+              <li><span class="text-muted">🏢 Sampaloc, Manila</span></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="text-center p-3 text-black">
+        © 2025 PawsConnect. All rights reserved.
+      </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

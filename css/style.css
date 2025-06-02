@@ -1,0 +1,519 @@
+/* --------------- CSS Variables --------------- */
+:root {
+  --bg-main: #F9F4F1;
+  --text-color: #000000;
+  --font-family: 'Poppins', sans-serif;
+  --orange: #FB8500;
+  --orange-light: #FFB703;
+  --blue: #219EBC;
+  --light-blue: #8ECAE6;
+  --footer-bg: #F1E8E2;
+  --card-yellow: #f5b301;
+  --card-blue: #008caa;
+  --card-orange: #f7941d;
+  --white: #ffffff;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* --------------- Logo & Buttons --------------- */
+.logo {
+  height: 100px;
+  width: auto;
+}
+.svg-button,
+.text-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 8px;
+}
+.text-button {
+  font-weight: 500;
+  font-size: 16px;
+}
+.book-btn {
+  background-color: var(--orange);
+  border: none;
+  border-radius: 20px;
+  padding: 5px 20px;
+  color: var(--text-color);
+  font-weight: 600;
+  text-decoration: none;
+}
+.book-btn:hover {
+  background-color: var(--orange-light);
+  color: var(--text-color);
+}
+.int-btn {
+  background-color: var(--orange);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: var(--text-color);
+  font-weight: 500;
+  text-decoration: none;
+}
+.int-btn:hover {
+  background-color: var(--orange-light);
+  color: var(--text-color);
+}
+
+/* --------------- Utility Classes --------------- */
+.highlight-text {
+  color: var(--text-color);
+  font-weight: 600;
+}
+.orange-bg {
+  background-color: var(--card-orange);
+}
+.blue-bg {
+  background-color: var(--card-blue);
+}
+.yellow-bg {
+  background-color: var(--card-yellow);
+}
+.lightblue-bg {
+  background-color: var(--light-blue);
+}
+
+/* --------------- Hero Section --------------- */
+.hero-section {
+  background-color: var(--bg-main);
+  overflow: visible;
+  position: relative;
+}
+.hero-heading-wrapper {
+  position: relative;
+  max-width: 550px;
+}
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 40px;
+  color: var(--text-color);
+}
+.pawprint-overlay {
+  position: absolute;
+  top: -55px;
+  right: -150px;
+  width: 150px;
+  z-index: 1;
+}
+.cat-circle-wrapper {
+  position: absolute;
+  top: 5%;
+  right: -8%;
+  width: 400px;
+  height: 350px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+.cat-circle {
+  background-color: var(--orange-light);
+  border-radius: 50%;
+  width: 400px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cat-img {
+  max-height: 350px;
+  object-fit: contain;
+}
+
+/* --------------- Slider Section --------------- */
+.slider-container {
+  overflow: hidden;
+  width: 200%;
+  padding: 30px 0;
+  height: 410px;
+}
+.slider-track {
+  display: flex;
+  width: max-content;
+  animation: scrollSlider 20s linear infinite;
+}
+.slider-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 390px;
+  margin-right: 20px;
+}
+.slider-img {
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  display: block;
+}
+.image-thumb1 {
+  width: 160px;
+  height: 200px;
+}
+.image-thumb2 {
+  width: 200px;
+  height: 280px;
+}
+.slider-img:hover {
+  transform: scale(1.1);
+}
+@keyframes scrollSlider {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-20%); }
+}
+
+/* --------------- Services Section --------------- */
+.service-card {
+  max-width: 20rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.service-card img {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+.card-body {
+  padding: 15px;
+  flex-grow: 1;
+}
+.container h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.card-img-top {
+  opacity: 0.6;
+  object-fit: cover;
+  height: 250px;
+}
+.card-title-overlay h5 {
+  background: none !important;
+  padding: 0 !important;
+  display: inline !important;
+  box-shadow: none;
+  margin: 0;
+}
+
+/* --------------- Products Section --------------- */
+.browse-link {
+  text-decoration: none;
+  color: var(--text-color);
+  position: absolute;
+  right: 0;
+}
+.product-card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+.product-card img {
+  object-fit: contain;
+  height: 250px;
+}
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+/* --------------- About Section --------------- */
+.about-section {
+  padding: 4rem 2rem;
+}
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.about-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  flex: 1 1 20px;
+  justify-items: center;
+}
+.about-text {
+  flex: 1 1 400px;
+}
+.about-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+.about-text p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* --------------- Appointment Section --------------- */
+.appointment-card {
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: var(--white);
+}
+
+/* --------------- Contact Section --------------- */
+.contact-section {
+  padding: 4rem 2rem;
+  background-color: var(--bg-main);
+}
+.contact-form {
+  background-color: var(--white);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+.contact-form textarea {
+  resize: none;
+}
+
+/* --------------- Form Controls --------------- */
+select,
+input {
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+}
+.form-control:focus {
+  border-color: #313233;
+}
+.d-grid button {
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+
+/* --------------- Footer --------------- */
+.footer-container {
+  background-color: var(--footer-bg);
+  border-top: 1px solid #ccc;
+  padding: 1rem 3rem;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;;
+}
+
+/* --------------- Responsive Styles --------------- */
+@media (max-width: 768px) {
+  .cat-circle-wrapper {
+    display: none !important;
+  }
+  .hero-title {
+    font-size: 2.2rem;
+    max-width: 100%;
+    margin-top: 40px;
+  }
+  .ptext {
+    font-size: 1rem;
+  }
+  .pawprint-overlay {
+    top: -40px;
+    right: -20px;
+    width: 75px;
+  }
+  .about-section {
+    display: none !important;
+  }
+  .browse-link {
+    margin-top: 50px;
+  }
+}
+
+/* --------------- Welcome, About, Doctors, Testimonials Sections --------------- */
+.welcome-section {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+.about-section {
+  padding: 4rem 1rem;
+}
+.doctors-section {
+  padding: 4rem 1rem;
+}
+.testimonial-section {
+  background-color: #E0F7FA;
+  padding: 4rem 1rem;
+}
+
+/* --------------- Buttons --------------- */
+.btn-primary {
+  background-color: var(--light-blue);
+  font-weight: bold;
+  border: none;
+}
+.btn-warning {
+  background-color: var(--orange-light);
+  border: none;
+  font-weight: bold;
+  color: black;
+}
+
+/* --------------- Doctor Cards --------------- */
+.doctor-card img {
+  height: 280px;
+  object-fit: cover;
+}
+
+
+/* --------------- Services Cards --------------- */
+.modal-content {
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+.modal-header {
+    background-color: var(--orange);
+    color: white;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.modal-body {
+    background-color: var(--bg-main);
+    padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+}
+.modal-footer {
+    background-color: var(--footer-bg);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+/* --------------- Product Cards --------------- */
+.product-card {
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    object-fit: cover;
+    height: 250px;
+}
+
+/* --------------- Cart Section --------------- */
+.cart-section {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9999;
+}
+
+#cart-button {
+    background-color: var(--orange);
+    color: var(--white);
+    height: 90px;
+    width: 150px;
+}
+
+#cart-button:hover {
+    background-color: var(--orange-light);
+}
+
+/* --------------- Cart Modal --------------- */
+.modal-content {
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.modal-header {
+    background-color: var(--orange);
+    color: white;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.modal-body {
+    background-color: var(--bg-main);
+    padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+}
+
+.modal-footer {
+    background-color: var(--footer-bg);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+/* --------------- Blog --------------- */
+.blog-header {
+    background-color: #FFB703;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+    border-radius: 0 0 2rem 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.blog-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.blog-card {
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    background-color: white;
+}
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+.blog-card img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+.blog-content {
+    padding: 20px;
+}
+.blog-content h5 {
+    font-weight: 600;
+    color: #FB8500;
+}
+.btn-read {
+    background-color: #219EBC;
+    color: white;
+    border-radius: 1rem;
+    padding: 6px 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.btn-read:hover {
+    background-color: #12677c;
+    color: white;
+}
