@@ -4,13 +4,10 @@
   --text-color: #000000;
   --font-family: 'Poppins', sans-serif;
   --orange: #FB8500;
-  --orange-light: #FFB703;
+  --yellow: #FFB703;
   --blue: #219EBC;
   --light-blue: #8ECAE6;
   --footer-bg: #F1E8E2;
-  --card-yellow: #f5b301;
-  --card-blue: #008caa;
-  --card-orange: #f7941d;
   --white: #ffffff;
 }
 
@@ -49,7 +46,7 @@ body {
   text-decoration: none;
 }
 .book-btn:hover {
-  background-color: var(--orange-light);
+  background-color: var(--yellow);
   color: var(--text-color);
 }
 .int-btn {
@@ -62,7 +59,7 @@ body {
   text-decoration: none;
 }
 .int-btn:hover {
-  background-color: var(--orange-light);
+  background-color: var(--yellow);
   color: var(--text-color);
 }
 
@@ -72,13 +69,13 @@ body {
   font-weight: 600;
 }
 .orange-bg {
-  background-color: var(--card-orange);
+  background-color: var(--orange);
 }
 .blue-bg {
-  background-color: var(--card-blue);
+  background-color: var(--blue);
 }
 .yellow-bg {
-  background-color: var(--card-yellow);
+  background-color: var(--yellow);
 }
 .lightblue-bg {
   background-color: var(--light-blue);
@@ -121,7 +118,7 @@ body {
   pointer-events: none;
 }
 .cat-circle {
-  background-color: var(--orange-light);
+  background-color: var(--yellow);
   border-radius: 50%;
   width: 400px;
   height: 350px;
@@ -199,11 +196,6 @@ body {
 .card:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease;
-}
-.card-img-top {
-  opacity: 0.6;
-  object-fit: cover;
-  height: 250px;
 }
 .card-title-overlay h5 {
   background: none !important;
@@ -371,12 +363,27 @@ input {
   color: var(--text-color);
   border: none;
 }
-.btn-warning {
-  background-color: var(--orange-light);
+.btn-secondary {
+  background-color: var(--yellow);
   border: none;
   font-weight: bold;
   color: black;
 }
+.modal-title-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  background-color: #219EBC; /* or your theme's accent */
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.modal-title-btn:hover {
+  background-color: #126782; /* darker shade for hover */
+}
+
 
 /* --------------- Doctor Cards --------------- */
 .doctor-card img {
@@ -441,7 +448,7 @@ input {
 }
 
 #cart-button:hover {
-    background-color: var(--orange-light);
+    background-color: var(--yellow);
 }
 
 /* --------------- Cart Modal --------------- */
@@ -518,3 +525,26 @@ input {
     background-color: #12677c;
     color: white;
 }
+
+/* Ensure modal images are responsive without stretching */
+#petBookletModal .modal-pet-photo {
+  max-width: 100%;  /* Ensures the image doesn't exceed the modal width */
+  height: auto;     /* Maintains aspect ratio */
+  margin: 0 auto;   /* Centers the image */
+  display: block;   /* Ensures the image behaves like a block element */
+}
+
+/* Optional: You can set a max-width for the image to control size */
+#petBookletModal .modal-pet-photo {
+  max-width: 500px;  /* Limit the maximum width of the image */
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+/* Ensure pet images inside the pet card are responsive */
+.pet-card img {
+  width: 100%;        /* Makes sure the image takes up the full width of the card */
+  height: auto;       /* Maintains the aspect ratio */
+  object-fit: cover;  /* Ensures the image doesn't get distorted */
+}
+

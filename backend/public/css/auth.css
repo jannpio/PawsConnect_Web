@@ -34,6 +34,10 @@ body {
     text-decoration: none;
 }
 
+.sbm-btn:hover {
+    background-color: #FFB703;
+}
+
 .btn{
     background-color: #d4d8dc;
 }

@@ -35,7 +35,6 @@
         <li class="nav-item px-4"><a class="nav-link active" href="appointments.html">Appointments</a></li>
         <li class="nav-item px-4"><a class="nav-link" href="services.html">Services</a></li>
         <li class="nav-item px-4"><a class="nav-link" href="contact_us.html">Contact</a></li>
-        <li class="nav-item px-4"><a class="nav-link" href="blog.html">Blog</a></li>
       </ul>
       <div class="d-flex justify-content-lg-end justify-content-center w-100 mt-2 mt-lg-0">
         <a href="bookAppointment.html" class="btn book-btn mt-2 mt-lg-0">Book an Appointment</a>
@@ -52,46 +51,19 @@
   </div>
 </section>
 
-<!-- Appointment Cards Section -->
-<section class="container my-5">
-  <h2 class="mb-4 fw-bold">Upcoming Appointments</h2>
-  <div class="row g-4">
-    <div class="col-md-6 col-lg-4">
-      <div class="card shadow-sm border-0 rounded-4 p-4 h-100">
-        <h3 class="fw-bold">Vet Checkup</h3>
-        <p><strong>Date:</strong> May 25, 2025</p>
-        <p><strong>Time:</strong> 10:00 AM</p>
-        <p><strong>Location:</strong> PawsConnect Clinic</p>
-        <p class="text-muted">Dr. Jennifer Sadezma</p>
-        <a href="#" class="btn int-btn fw-bold">View Details</a>
-      </div>
+  <!-- Appointment Cards Section -->
+  <section class="container my-5">
+    <h2 class="mb-4 fw-bold">Upcoming Appointments</h2>
+    <div id="upcomingAppointments" class="row g-4">
+      <!-- Cards will be loaded here dynamically -->
     </div>
-    <div class="col-md-6 col-lg-4">
-      <div class="card shadow-sm border-0 rounded-4 p-4 h-100">
-        <h3 class="fw-bold">Grooming Session</h3>
-        <p><strong>Date:</strong> June 5, 2025</p>
-        <p><strong>Time:</strong> 1:00 PM</p>
-        <p><strong>Location:</strong> PawsConnect Grooming</p>
-        <p class="text-muted">Groomer: Joy Marie Ruanto</p>
-        <a href="#" class="btn int-btn fw-bold">View Details</a>
-      </div>
-    </div>
-  </div>
 
-  <h2 class="mt-5 mb-4 fw-bold">Past Appointments</h2>
-  <div class="row g-4">
-    <div class="col-md-6 col-lg-4">
-      <div class="card shadow-sm border-0 rounded-4 p-4 h-100">
-        <h3 class="fw-bold">Dental Cleaning</h3>
-        <p><strong>Date:</strong> April 10, 2025</p>
-        <p><strong>Time:</strong> 11:30 AM</p>
-        <p><strong>Location:</strong> PawsConnect Clinic</p>
-        <p class="text-muted">Dr. Kath Maxwell</p>
-        <a href="#" class="btn btn-secondary">View Summary</a>
-      </div>
+    <h2 class="mt-5 mb-4 fw-bold">Past Appointments</h2>
+    <div class="row g-4">
+      <!-- You can add Past Appointments later -->
     </div>
-  </div>
-</section>
+  </section>
+
 
 <!-- Book Appointment Form -->
 <section class="container mb-5">
@@ -171,5 +143,6 @@
     </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/appointment.js"></script>
 </body>
 </html>
