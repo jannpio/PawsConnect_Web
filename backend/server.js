@@ -66,6 +66,7 @@ const appointmentSchema = new mongoose.Schema({
   time: { type: String, required: true },
   serviceType: { type: String, required: true },
   notes: { type: String },
+  status: { type: String, default: 'Pending' }, // 🐾 Add this!
   createdAt: { type: Date, default: Date.now }
 });
 const Appointment = mongoose.model('Appointment', appointmentSchema);
@@ -269,6 +270,17 @@ app.delete('/api/appointments/:id', async (req, res) => {
     res.status(500).json({ error: 'Server error while cancelling appointment.' });
   }
 });
+
+app.put('/api/appointments/:id/done', async (req, res) => {
+  try {
+    await Appointment.findByIdAndUpdate(req.params.id, { status: 'Done' });
+    res.status(200).json({ message: 'Appointment marked as done!' });
+  } catch (err) {
+    console.error('Mark as done error:', err);
+    res.status(500).json({ error: 'Server error while updating appointment.' });
+  }
+});
+
 
 // Products
 app.post('/api/products', upload.single('image'), async (req, res) => {

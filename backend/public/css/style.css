@@ -35,6 +35,11 @@ body {
   font-weight: 600;
 }
 
+.navbar-index {
+  background-color: transparent;
+  box-shadow: none;
+}
+
 /* --------------- Logo & Buttons --------------- */
 .logo {
   height: 100px;
