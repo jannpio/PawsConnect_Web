@@ -66,7 +66,7 @@ const appointmentSchema = new mongoose.Schema({
   time: { type: String, required: true },
   serviceType: { type: String, required: true },
   notes: { type: String },
-  status: { type: String, default: 'Pending' }, // 🐾 Add this!
+  status: { type: String, default: 'Pending' }, 
   createdAt: { type: Date, default: Date.now }
 });
 const Appointment = mongoose.model('Appointment', appointmentSchema);

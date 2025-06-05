@@ -244,7 +244,7 @@ document.getElementById('appointmentForm').addEventListener('submit', async (e) 
     if (response.ok) {
       alert('Appointment booked successfully!');
       document.getElementById('appointmentForm').reset();
-      loadAppointments(); // 🐾 Reload Appointments after booking
+      loadAppointments(); 
     } else {
       alert(data.error || 'Failed to book appointment.');
     }
@@ -257,7 +257,7 @@ document.getElementById('appointmentForm').addEventListener('submit', async (e) 
 // Load everything when page loads
 document.addEventListener('DOMContentLoaded', () => {
   loadPetsForAppointment();
-  loadAppointments(); // 🐾 Load Appointments on page load
+  loadAppointments(); 
 });
 
 

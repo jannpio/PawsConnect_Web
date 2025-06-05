@@ -128,7 +128,7 @@ document.getElementById('checkout-btn').addEventListener('click', async () => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${token}`, // Attach token here 🐾
+        'Authorization': `Bearer ${token}`, 
       },
       body: JSON.stringify(orderData),
     });
