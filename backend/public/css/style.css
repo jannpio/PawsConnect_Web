@@ -20,6 +20,21 @@ body {
   overflow-x: hidden;
 }
 
+/* --------------- Navbar --------------- */
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-link {
+  font-weight: 500;
+}
+
+.navbar .nav-link.active {
+  color: black;
+  font-weight: 600;
+}
+
 /* --------------- Logo & Buttons --------------- */
 .logo {
   height: 100px;
@@ -62,7 +77,14 @@ body {
   background-color: var(--yellow);
   color: var(--text-color);
 }
-
+.btn-warning {
+  background-color: #FFB703;
+  border: none;
+  font-weight: 600;
+}
+.btn-warning:hover {
+  background-color: #fb8500;
+}
 /* --------------- Utility Classes --------------- */
 .highlight-text {
   color: var(--text-color);
@@ -526,25 +548,21 @@ input {
     color: white;
 }
 
-/* Ensure modal images are responsive without stretching */
 #petBookletModal .modal-pet-photo {
-  max-width: 100%;  /* Ensures the image doesn't exceed the modal width */
-  height: auto;     /* Maintains aspect ratio */
-  margin: 0 auto;   /* Centers the image */
-  display: block;   /* Ensures the image behaves like a block element */
+  max-width: 100%;  
+  height: auto;     
+  margin: 0 auto;   
+  display: block;   
 }
-
-/* Optional: You can set a max-width for the image to control size */
 #petBookletModal .modal-pet-photo {
-  max-width: 500px;  /* Limit the maximum width of the image */
+  max-width: 500px;  
   height: auto;
   margin: 0 auto;
   display: block;
 }
-/* Ensure pet images inside the pet card are responsive */
 .pet-card img {
-  width: 100%;        /* Makes sure the image takes up the full width of the card */
-  height: auto;       /* Maintains the aspect ratio */
-  object-fit: cover;  /* Ensures the image doesn't get distorted */
+  width: 100%;        
+  height: auto;       
+  object-fit: cover;  
 }
 

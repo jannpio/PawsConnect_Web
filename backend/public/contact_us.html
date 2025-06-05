@@ -9,35 +9,30 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-
-  <!-- Header Landmark -->
-        <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="images/pawsconnect_logo.png" alt="PawsConnect logo" class="logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Collapse Nav -->
-        <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
-                <li class="nav-item px-4"><a class="nav-link" href="home.html">Home</a></li>
-                <li class="nav-item px-4"><a class="nav-link" href="shop.html">Shop</a></li>
-                <li class="nav-item px-4"><a class="nav-link" href="appointments.html">Appointments</a></li>
-                <li class="nav-item px-4"><a class="nav-link" href="services.html">Services</a></li>
-                <li class="nav-item px-4"><a class="nav-link active" href="contact_us.html">Contact</a></li>
-            </ul>
-            <div class="d-flex justify-content-lg-end justify-content-center w-100 mt-2 mt-lg-0">
-            <a href="bookAppointment.html" class="btn book-btn mt-2 mt-lg-0">
-                Book an Appointment
-            </a>
-            </div>
-        </div>
-        </div>
-    </nav>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="admin.html">
+      <img src="images/pawsconnect_logo.png" alt="PawsConnect logo" class="logo" />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+      aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+        <li class="nav-item px-3"><a class="nav-link" href="Home.html">Home</a></li>
+        <li class="nav-item px-3"><a class="nav-link" href="shop.html">Shop</a></li>
+        <li class="nav-item px-3"><a class="nav-link" href="appointments.html">Appointments</a></li>
+        <li class="nav-item px-3"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item px-3"><a class="nav-link active" href="contact_us.html">Contact Us</a></li>
+      </ul>
+      <div class="d-flex">
+        <button class="btn btn-warning" onclick="logout()">Logout</button>
+      </div>
+    </div>
+  </div>
+</nav>
 
   <!-- Main Landmark -->
   <main class="container" role="main">
@@ -76,5 +71,13 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/contact.js"></script>
+  <script>
+  function logout() {
+    localStorage.removeItem('token');
+    localStorage.removeItem('isAdmin');
+    window.location.href = '/login.html';
+  }
+</script>
 </body>
 </html>
