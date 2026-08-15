@@ -161,14 +161,15 @@ body {
 /* --------------- Slider Section --------------- */
 .slider-container {
   overflow: hidden;
-  width: 200%;
+  width: 100%;
   padding: 30px 0;
   height: 410px;
+  margin-top: 40px;
 }
 .slider-track {
   display: flex;
   width: max-content;
-  animation: scrollSlider 20s linear infinite;
+  animation: scrollSlider 40s linear infinite;
 }
 .slider-item {
   display: flex;
@@ -196,7 +197,10 @@ body {
 }
 @keyframes scrollSlider {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-20%); }
+  100% { transform: translateX(-50%); }
+}
+.slider-container:hover .slider-track {
+  animation-play-state: paused;
 }
 
 /* --------------- Services Section --------------- */
@@ -338,42 +342,13 @@ input {
   text-align: center;
   position: relative;
   bottom: 0;
-  width: 100%;;
-}
-
-/* --------------- Responsive Styles --------------- */
-@media (max-width: 768px) {
-  .cat-circle-wrapper {
-    display: none !important;
-  }
-  .hero-title {
-    font-size: 2.2rem;
-    max-width: 100%;
-    margin-top: 40px;
-  }
-  .ptext {
-    font-size: 1rem;
-  }
-  .pawprint-overlay {
-    top: -40px;
-    right: -20px;
-    width: 75px;
-  }
-  .about-section {
-    display: none !important;
-  }
-  .browse-link {
-    margin-top: 50px;
-  }
+  width: 100%;
 }
 
 /* --------------- Welcome, About, Doctors, Testimonials Sections --------------- */
 .welcome-section {
   padding: 4rem 1rem;
   text-align: center;
-}
-.about-section {
-  padding: 4rem 1rem;
 }
 .doctors-section {
   padding: 4rem 1rem;
@@ -400,7 +375,7 @@ input {
   font-size: 1.5rem;
   font-weight: bold;
   border: none;
-  background-color: #219EBC; /* or your theme's accent */
+  background-color: #219EBC;
   color: white;
   padding: 0.5rem 1.25rem;
   border-radius: 0.5rem;
@@ -408,16 +383,14 @@ input {
 }
 
 .modal-title-btn:hover {
-  background-color: #126782; /* darker shade for hover */
+  background-color: #126782;
 }
-
 
 /* --------------- Doctor Cards --------------- */
 .doctor-card img {
   height: 280px;
   object-fit: cover;
 }
-
 
 /* --------------- Services Cards --------------- */
 .modal-content {
@@ -478,33 +451,6 @@ input {
     background-color: var(--yellow);
 }
 
-/* --------------- Cart Modal --------------- */
-.modal-content {
-    border-radius: 1rem;
-    border: none;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
-}
-
-.modal-header {
-    background-color: var(--orange);
-    color: white;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-}
-
-.modal-body {
-    background-color: var(--bg-main);
-    padding: 2rem;
-    font-family: 'Poppins', sans-serif;
-    color: var(--text-color);
-}
-
-.modal-footer {
-    background-color: var(--footer-bg);
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-}
-
 /* --------------- Blog --------------- */
 .blog-header {
     background-color: #FFB703;
@@ -554,20 +500,146 @@ input {
 }
 
 #petBookletModal .modal-pet-photo {
-  max-width: 100%;  
-  height: auto;     
-  margin: 0 auto;   
-  display: block;   
-}
-#petBookletModal .modal-pet-photo {
-  max-width: 500px;  
+  max-width: 500px;
   height: auto;
   margin: 0 auto;
   display: block;
 }
 .pet-card img {
-  width: 100%;        
-  height: auto;       
-  object-fit: cover;  
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
+/* --------------- Responsive Styles --------------- */
+@media (max-width: 992px) {
+  .logo {
+    height: 70px;
+  }
+  .cat-circle-wrapper {
+    display: none !important;
+  }
+  .hero-title {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.2rem;
+    max-width: 100%;
+    margin-top: 40px;
+  }
+  .ptext {
+    font-size: 1rem;
+  }
+  .pawprint-overlay {
+    top: -40px;
+    right: -20px;
+    width: 75px;
+  }
+  .browse-link {
+    position: static;
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+  }
+  .d-flex.justify-content-between.align-items-center.mb-4.position-relative {
+    flex-direction: column;
+  }
+
+  /* Slider: shrink so mobile doesn't scroll a giant strip */
+  .slider-container {
+    height: 260px;
+    padding: 15px 0;
+  }
+  .slider-item {
+    height: 240px;
+    margin-right: 12px;
+  }
+  .image-thumb1 {
+    width: 110px;
+    height: 140px;
+  }
+  .image-thumb2 {
+    width: 140px;
+    height: 190px;
+  }
+  .slider-track {
+    animation-duration: 28s;
+  }
+
+  /* About section: stack instead of hiding */
+  .about-section {
+    padding: 3rem 1.25rem;
+  }
+  .about-container {
+    flex-direction: column;
+  }
+  .about-images {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .about-text h2,
+  .about-text p {
+    text-align: center;
+  }
+
+  .doctor-card img {
+    height: 220px;
+  }
+
+  .product-card img {
+    height: 200px;
+  }
+
+  #cart-button {
+    height: 70px;
+    width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    height: 55px;
+  }
+  .hero-title {
+    font-size: 1.7rem;
+  }
+  .pawprint-overlay {
+    width: 55px;
+    top: -30px;
+    right: -10px;
+  }
+
+  .slider-container {
+    height: 200px;
+  }
+  .slider-item {
+    height: 180px;
+    margin-right: 8px;
+  }
+  .image-thumb1 {
+    width: 85px;
+    height: 105px;
+  }
+  .image-thumb2 {
+    width: 105px;
+    height: 145px;
+  }
+  .slider-track {
+    animation-duration: 22s;
+  }
+
+  .about-images {
+    grid-template-columns: 1fr;
+  }
+
+  .doctor-card img {
+    height: 180px;
+  }
+
+  .footer-container {
+    padding: 1rem 1.5rem;
+  }
+}

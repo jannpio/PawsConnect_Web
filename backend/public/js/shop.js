@@ -151,8 +151,3 @@ document.getElementById('checkout-btn').addEventListener('click', async () => {
 
 document.addEventListener('DOMContentLoaded', loadProducts);
 
-function logout() {
-  localStorage.removeItem('token');
-  localStorage.removeItem('isAdmin');
-  window.location.href = '/login.html';
-}

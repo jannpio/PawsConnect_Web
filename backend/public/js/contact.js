@@ -27,8 +27,3 @@ document.querySelector('form').addEventListener('submit', async (e) => {
   }
 });
 
-function logout() {
-  localStorage.removeItem('token');
-  localStorage.removeItem('isAdmin');
-  window.location.href = '/login.html';
-}

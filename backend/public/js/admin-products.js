@@ -98,8 +98,3 @@ document.getElementById('addProductForm').addEventListener('submit', async funct
 
 document.addEventListener('DOMContentLoaded', loadProducts);
 
-function logout() {
-  localStorage.removeItem('token');
-  localStorage.removeItem('isAdmin');
-  window.location.href = '/login.html';
-}

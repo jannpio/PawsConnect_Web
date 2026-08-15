@@ -47,8 +47,3 @@ async function completeOrder(orderId) {
 
 document.addEventListener('DOMContentLoaded', loadOrders);
 
-function logout() {
-  localStorage.removeItem('token');
-  localStorage.removeItem('isAdmin');
-  window.location.href = '/login.html';
-}
